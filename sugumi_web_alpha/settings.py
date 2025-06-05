@@ -27,7 +27,7 @@ DEBUG = True
 
 import os
 APP_NAME = os.environ.get("FLY_APP_NAME")
-ALLOWED_HOSTS = [f"{APP_NAME}.fly.dev"]
+ALLOWED_HOSTS = [f"{APP_NAME}.fly.dev", "127.0.0.1"]
 
 
 # Application definition
