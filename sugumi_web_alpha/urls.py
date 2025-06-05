@@ -6,7 +6,8 @@ from django.urls import path
 
 # ↓ New basic view returning "Hello, Fly!" ↓
 def hello(request):
-    return HttpResponse("Hello, Fly!")
+    import django
+    return HttpResponse(django.get_version())
 
 
 urlpatterns = [
