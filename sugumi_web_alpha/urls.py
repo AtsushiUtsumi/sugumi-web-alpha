@@ -24,7 +24,7 @@ def kabu(request):
     price = get_stock_price(symbol, datetime.now())
     if price is None:
         return HttpResponse("株価情報の取得または解析に失敗しました")
-    return HttpResponse(f"{symbol}の株価は{price}円です")
+    return HttpResponse(f"{price}")
 
 # ↓ New basic view returning "Hello, Fly!" ↓
 def hello(request):
